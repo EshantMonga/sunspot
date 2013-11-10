@@ -27,7 +27,9 @@ module Sunspot
       attr_writer :result #:nodoc:
 
       def initialize(raw_hit, highlights, search) #:nodoc:
-        @class_name, @primary_key = *raw_hit['id'].match(/([^ !]+) (.+)/)[1..2]
+        id_field = raw_hit['id'].rpartition('!')[2]
+        parts = id_field.partition(' ')
+        @class_name, @primary_key = parts[0], parts[2]
         @score = raw_hit['score']
         @search = search
         @stored_values = raw_hit
