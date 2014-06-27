@@ -10,6 +10,7 @@ sunspot_solr/solr/solr-webapp
 sunspot_solr/solr/solr/default/data
 sunspot_solr/solr/solr/space/data
 sunspot_solr/solr/solr/spacestile/data
+sunspot_solr/solr/logs
 .yardoc
 docs
 *.swp
