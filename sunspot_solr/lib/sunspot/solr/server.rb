@@ -193,7 +193,7 @@ module Sunspot
 
           ['default', 'space', 'spaces'].each do |coll|
             data_dir = File.join(File.dirname(__FILE__), '..', '..', '..', 'solr', 'solr', coll, 'data')
-            File.cp(data_dir, "/tmp/solr_#{coll}_data")
+            FileUtils.cp(data_dir, "/tmp/solr_#{coll}_data")
           end
         end
       end
