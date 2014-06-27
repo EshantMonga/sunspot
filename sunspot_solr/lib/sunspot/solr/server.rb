@@ -191,9 +191,9 @@ module Sunspot
         [solr_data_dir, pid_dir].each do |path|
           FileUtils.mkdir_p(path) unless File.exists?(path)
 
-          ['default', 'space', 'spaces'].each do |coll|
+          ['default', 'space', 'spacestile'].each do |coll|
             data_dir = File.join(File.dirname(__FILE__), '..', '..', '..', 'solr', 'solr', coll, 'data')
-            FileUtils.cp_r(data_dir, "/tmp/solr_#{coll}_data")
+            FileUtils.cp_r(data_dir, "/tmp/solr_#{coll}_data") unless File.exists?(data_dir)
           end
         end
       end
