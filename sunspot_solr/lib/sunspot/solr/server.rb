@@ -192,7 +192,7 @@ module Sunspot
           FileUtils.mkdir_p(path) unless File.exists?(path)
 
           ['default', 'space', 'spaces'].each do |coll|
-            data_dir = Dir.join(File.dirname(__FILE__), '..', '..', '..', 'solr', 'solr', coll, 'data')
+            data_dir = File.join(File.dirname(__FILE__), '..', '..', '..', 'solr', 'solr', coll, 'data')
             File.cp(data_dir, "/tmp/solr_#{coll}_data")
           end
         end
