@@ -190,6 +190,11 @@ module Sunspot
       def create_solr_directories
         [solr_data_dir, pid_dir].each do |path|
           FileUtils.mkdir_p(path) unless File.exists?(path)
+
+          ['default', 'space', 'spaces'].each do |coll|
+            data_dir = Dir.join(File.dirname(__FILE__), '..', '..', '..', 'solr', 'solr', coll, 'data')
+            File.cp(data_dir, "/tmp/solr_#{coll}_data")
+          end
         end
       end
 
