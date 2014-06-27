@@ -1342,3 +1342,512 @@ INFO  - 2014-06-19 14:17:28.390; org.apache.solr.core.CachingDirectoryFactory; C
 INFO  - 2014-06-19 14:17:28.390; org.apache.solr.core.CachingDirectoryFactory; looking to close /Users/mityaWork/solr-4.8.1/example/docu/spacestile/data/index [CachedDir<<refCount=0;path=/Users/mityaWork/solr-4.8.1/example/docu/spacestile/data/index;done=false>>]
 INFO  - 2014-06-19 14:17:28.390; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /Users/mityaWork/solr-4.8.1/example/docu/spacestile/data/index
 INFO  - 2014-06-19 14:17:28.391; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/Users/mityaWork/solr-4.8.1/example/solr-webapp/webapp/},/Users/mityaWork/solr-4.8.1/example/webapps/solr.war
+INFO  - 2014-06-26 18:57:36.847; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-06-26 18:57:36.868; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/contexts at interval 0
+INFO  - 2014-06-26 18:57:36.872; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/contexts/solr-jetty-context.xml
+INFO  - 2014-06-26 18:57:36.920; org.eclipse.jetty.webapp.WebInfConfiguration; Extract jar:file:/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/webapps/solr.war!/ to /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr-webapp/webapp
+INFO  - 2014-06-26 18:57:38.130; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-06-26 18:57:38.177; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-06-26 18:57:38.187; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-06-26 18:57:38.188; org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr
+INFO  - 2014-06-26 18:57:38.188; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/'
+INFO  - 2014-06-26 18:57:38.267; org.apache.solr.core.ConfigSolr; Loading container configuration from /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/solr.xml
+INFO  - 2014-06-26 18:57:38.330; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr
+INFO  - 2014-06-26 18:57:38.337; org.apache.solr.core.CoreContainer; New CoreContainer 1068586139
+INFO  - 2014-06-26 18:57:38.338; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/]
+INFO  - 2014-06-26 18:57:38.347; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-06-26 18:57:38.347; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2014-06-26 18:57:38.350; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-06-26 18:57:38.351; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-06-26 18:57:38.351; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-06-26 18:57:38.351; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-06-26 18:57:38.352; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-06-26 18:57:38.352; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-06-26 18:57:38.352; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-06-26 18:57:38.432; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-06-26 18:57:38.433; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-06-26 18:57:38.434; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2014-06-26 18:57:38.466; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr
+INFO  - 2014-06-26 18:57:38.474; org.apache.solr.core.CorePropertiesLocator; Found core default in /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/
+INFO  - 2014-06-26 18:57:38.474; org.apache.solr.core.CorePropertiesLocator; Found core space in /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/
+INFO  - 2014-06-26 18:57:38.475; org.apache.solr.core.CorePropertiesLocator; Found core spacestile in /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/
+INFO  - 2014-06-26 18:57:38.475; org.apache.solr.core.CorePropertiesLocator; Found 3 core definitions
+INFO  - 2014-06-26 18:57:38.477; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/'
+INFO  - 2014-06-26 18:57:38.477; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/'
+INFO  - 2014-06-26 18:57:38.477; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/'
+INFO  - 2014-06-26 18:57:38.539; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+WARN  - 2014-06-26 18:57:38.540; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/extraction/lib (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/../../../contrib/extraction/lib).
+INFO  - 2014-06-26 18:57:38.540; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+WARN  - 2014-06-26 18:57:38.541; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/../../../dist).
+INFO  - 2014-06-26 18:57:38.541; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+WARN  - 2014-06-26 18:57:38.541; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/extraction/lib (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/../../../contrib/extraction/lib).
+WARN  - 2014-06-26 18:57:38.541; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/extraction/lib (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/../../../contrib/extraction/lib).
+WARN  - 2014-06-26 18:57:38.541; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/clustering/lib/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/../../../contrib/clustering/lib).
+WARN  - 2014-06-26 18:57:38.542; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/../../../dist).
+WARN  - 2014-06-26 18:57:38.542; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/../../../dist).
+WARN  - 2014-06-26 18:57:38.541; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/../../../dist).
+WARN  - 2014-06-26 18:57:38.542; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/clustering/lib/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/../../../contrib/clustering/lib).
+WARN  - 2014-06-26 18:57:38.542; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/langid/lib/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/../../../contrib/langid/lib).
+WARN  - 2014-06-26 18:57:38.543; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/../../../dist).
+WARN  - 2014-06-26 18:57:38.543; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/clustering/lib/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/../../../contrib/clustering/lib).
+WARN  - 2014-06-26 18:57:38.543; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/langid/lib/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/../../../contrib/langid/lib).
+WARN  - 2014-06-26 18:57:38.543; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/../../../dist).
+WARN  - 2014-06-26 18:57:38.544; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/../../../dist).
+WARN  - 2014-06-26 18:57:38.544; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/../../../dist).
+WARN  - 2014-06-26 18:57:38.544; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/velocity/lib (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/../../../contrib/velocity/lib).
+WARN  - 2014-06-26 18:57:38.544; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/velocity/lib (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/../../../contrib/velocity/lib).
+WARN  - 2014-06-26 18:57:38.545; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/../../../dist).
+WARN  - 2014-06-26 18:57:38.544; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/langid/lib/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/../../../contrib/langid/lib).
+WARN  - 2014-06-26 18:57:38.545; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/../../../dist).
+WARN  - 2014-06-26 18:57:38.545; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/../../../dist).
+WARN  - 2014-06-26 18:57:38.546; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/velocity/lib (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/../../../contrib/velocity/lib).
+WARN  - 2014-06-26 18:57:38.546; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/../../../dist).
+INFO  - 2014-06-26 18:57:38.598; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2014-06-26 18:57:38.608; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_44
+INFO  - 2014-06-26 18:57:38.608; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2014-06-26 18:57:38.611; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2014-06-26 18:57:38.611; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_44
+INFO  - 2014-06-26 18:57:38.615; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_44
+INFO  - 2014-06-26 18:57:38.756; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-06-26 18:57:38.756; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-06-26 18:57:38.756; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-06-26 18:57:38.763; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-06-26 18:57:38.763; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-06-26 18:57:38.763; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-06-26 18:57:38.785; org.apache.solr.schema.IndexSchema; [spacestile] Schema name=sunspot-staging
+INFO  - 2014-06-26 18:57:38.785; org.apache.solr.schema.IndexSchema; [default] Schema name=sunspot-staging
+INFO  - 2014-06-26 18:57:38.786; org.apache.solr.schema.IndexSchema; [space] Schema name=sunspot-staging
+WARN  - 2014-06-26 18:57:38.858; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.858; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.858; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.862; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableDoubleField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.862; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableDoubleField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.862; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableDoubleField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.865; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableFloatField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.865; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableFloatField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.865; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableFloatField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.868; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableIntField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.868; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableIntField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.869; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableIntField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.872; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableLongField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.872; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableLongField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:38.872; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableLongField]. Please consult documentation how to replace it accordingly.
+INFO  - 2014-06-26 18:57:38.891; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2014-06-26 18:57:38.891; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2014-06-26 18:57:38.891; org.apache.solr.schema.IndexSchema; query parser default operator is AND
+INFO  - 2014-06-26 18:57:38.892; org.apache.solr.schema.IndexSchema; query parser default operator is AND
+INFO  - 2014-06-26 18:57:38.892; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2014-06-26 18:57:38.892; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-06-26 18:57:38.893; org.apache.solr.schema.IndexSchema; query parser default operator is AND
+INFO  - 2014-06-26 18:57:38.894; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-06-26 18:57:38.892; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-06-26 18:57:38.951; org.apache.solr.core.CoreContainer; Creating SolrCore 'spacestile' using configuration from instancedir /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/
+INFO  - 2014-06-26 18:57:38.951; org.apache.solr.core.CoreContainer; Creating SolrCore 'space' using configuration from instancedir /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/
+INFO  - 2014-06-26 18:57:38.951; org.apache.solr.core.CoreContainer; Creating SolrCore 'default' using configuration from instancedir /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/
+INFO  - 2014-06-26 18:57:38.965; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2014-06-26 18:57:38.965; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2014-06-26 18:57:38.965; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2014-06-26 18:57:38.972; org.apache.solr.core.SolrCore; [spacestile] Opening new SolrCore at /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/, dataDir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/
+INFO  - 2014-06-26 18:57:38.972; org.apache.solr.core.SolrCore; [default] Opening new SolrCore at /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/, dataDir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data/
+INFO  - 2014-06-26 18:57:38.972; org.apache.solr.core.SolrCore; [space] Opening new SolrCore at /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/, dataDir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/
+INFO  - 2014-06-26 18:57:38.974; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2014-06-26 18:57:38.974; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2014-06-26 18:57:38.974; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2014-06-26 18:57:38.978; org.apache.solr.core.SolrCore; [space] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2014-06-26 18:57:38.977; org.apache.solr.core.SolrCore; [spacestile] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2014-06-26 18:57:38.978; org.apache.solr.core.SolrCore; [space] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2014-06-26 18:57:38.978; org.apache.solr.core.SolrCore; [default] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2014-06-26 18:57:38.978; org.apache.solr.core.SolrCore; [spacestile] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2014-06-26 18:57:38.979; org.apache.solr.core.SolrCore; [default] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2014-06-26 18:57:38.990; org.apache.solr.core.CachingDirectoryFactory; return new directory for /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data
+INFO  - 2014-06-26 18:57:38.990; org.apache.solr.core.CachingDirectoryFactory; return new directory for /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data
+INFO  - 2014-06-26 18:57:38.990; org.apache.solr.core.CachingDirectoryFactory; return new directory for /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data
+INFO  - 2014-06-26 18:57:38.995; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index/
+INFO  - 2014-06-26 18:57:38.995; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index/
+INFO  - 2014-06-26 18:57:38.996; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data/index/
+INFO  - 2014-06-26 18:57:38.996; org.apache.solr.core.CachingDirectoryFactory; return new directory for /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index
+INFO  - 2014-06-26 18:57:38.996; org.apache.solr.core.CachingDirectoryFactory; return new directory for /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index
+INFO  - 2014-06-26 18:57:38.996; org.apache.solr.core.CachingDirectoryFactory; return new directory for /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data/index
+INFO  - 2014-06-26 18:57:39.014; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2014-06-26 18:57:39.014; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2014-06-26 18:57:39.015; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2014-06-26 18:57:39.015; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2014-06-26 18:57:39.016; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2014-06-26 18:57:39.016; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2014-06-26 18:57:39.016; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2014-06-26 18:57:39.016; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2014-06-26 18:57:39.016; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2014-06-26 18:57:39.020; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2014-06-26 18:57:39.020; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2014-06-26 18:57:39.020; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2014-06-26 18:57:39.021; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2014-06-26 18:57:39.020; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2014-06-26 18:57:39.021; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2014-06-26 18:57:39.100; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-06-26 18:57:39.100; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-06-26 18:57:39.100; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-06-26 18:57:39.112; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.112; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.112; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.113; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.113; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.113; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.115; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-06-26 18:57:39.115; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.115; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-06-26 18:57:39.116; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.116; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-06-26 18:57:39.116; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.119; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2014-06-26 18:57:39.119; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2014-06-26 18:57:39.119; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+WARN  - 2014-06-26 18:57:39.122; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.JsonUpdateRequestHandler]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:39.122; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.JsonUpdateRequestHandler]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:39.122; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.JsonUpdateRequestHandler]. Please consult documentation how to replace it accordingly.
+INFO  - 2014-06-26 18:57:39.122; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - 2014-06-26 18:57:39.122; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - 2014-06-26 18:57:39.122; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+WARN  - 2014-06-26 18:57:39.125; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.CSVRequestHandler]. Please consult documentation how to replace it accordingly.
+INFO  - 2014-06-26 18:57:39.125; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2014-06-26 18:57:39.125; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+WARN  - 2014-06-26 18:57:39.125; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.CSVRequestHandler]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-26 18:57:39.125; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.CSVRequestHandler]. Please consult documentation how to replace it accordingly.
+INFO  - 2014-06-26 18:57:39.126; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-06-26 18:57:39.126; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.126; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.126; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.126; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2014-06-26 18:57:39.126; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.126; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2014-06-26 18:57:39.127; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-06-26 18:57:39.126; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-06-26 18:57:39.127; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-06-26 18:57:39.127; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-06-26 18:57:39.127; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.127; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.128; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.128; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.128; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.127; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.128; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.128; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-06-26 18:57:39.128; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2014-06-26 18:57:39.130; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2014-06-26 18:57:39.132; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2014-06-26 18:57:39.132; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-06-26 18:57:39.132; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-06-26 18:57:39.132; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-06-26 18:57:39.135; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2014-06-26 18:57:39.136; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2014-06-26 18:57:39.136; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2014-06-26 18:57:39.147; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-06-26 18:57:39.147; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-06-26 18:57:39.147; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.147; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-06-26 18:57:39.147; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.148; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.147; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.155; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.155; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.156; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.156; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.155; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.156; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.156; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.156; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.147; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.156; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.156; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.156; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.157; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.157; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.157; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.157; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.157; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.157; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.158; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.157; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2014-06-26 18:57:39.167; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-26 18:57:39.167; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-26 18:57:39.167; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-26 18:57:39.169; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-26 18:57:39.169; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-26 18:57:39.169; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-26 18:57:39.169; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-26 18:57:39.170; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-26 18:57:39.170; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-26 18:57:39.197; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2014-06-26 18:57:39.197; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2014-06-26 18:57:39.197; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2014-06-26 18:57:39.198; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-06-26 18:57:39.197; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-06-26 18:57:39.198; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-06-26 18:57:39.296; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kl,generation=741}
+INFO  - 2014-06-26 18:57:39.296; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kt,generation=749}
+INFO  - 2014-06-26 18:57:39.296; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 741
+INFO  - 2014-06-26 18:57:39.296; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1es,generation=1828}
+INFO  - 2014-06-26 18:57:39.297; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1828
+INFO  - 2014-06-26 18:57:39.297; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 749
+INFO  - 2014-06-26 18:57:39.342; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@6a7ca333[space] main
+INFO  - 2014-06-26 18:57:39.342; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@47d6e0f5[default] main
+INFO  - 2014-06-26 18:57:39.350; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/conf
+INFO  - 2014-06-26 18:57:39.350; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/conf
+INFO  - 2014-06-26 18:57:39.351; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/conf/}
+INFO  - 2014-06-26 18:57:39.350; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/conf/}
+INFO  - 2014-06-26 18:57:39.354; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@49426ffb[spacestile] main
+INFO  - 2014-06-26 18:57:39.357; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/conf
+INFO  - 2014-06-26 18:57:39.357; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/conf/}
+INFO  - 2014-06-26 18:57:39.360; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/conf
+INFO  - 2014-06-26 18:57:39.360; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/conf
+INFO  - 2014-06-26 18:57:39.360; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/conf
+WARN  - 2014-06-26 18:57:39.361; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-06-26 18:57:39.361; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-06-26 18:57:39.362; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+WARN  - 2014-06-26 18:57:39.361; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+INFO  - 2014-06-26 18:57:39.362; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-06-26 18:57:39.362; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+WARN  - 2014-06-26 18:57:39.361; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+INFO  - 2014-06-26 18:57:39.362; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+WARN  - 2014-06-26 18:57:39.363; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+INFO  - 2014-06-26 18:57:39.363; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-06-26 18:57:39.363; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2014-06-26 18:57:39.363; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2014-06-26 18:57:39.372; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2014-06-26 18:57:39.372; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2014-06-26 18:57:39.372; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2014-06-26 18:57:39.382; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2014-06-26 18:57:39.382; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2014-06-26 18:57:39.382; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2014-06-26 18:57:39.384; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/conf/elevate.xml
+INFO  - 2014-06-26 18:57:39.384; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/conf/elevate.xml
+INFO  - 2014-06-26 18:57:39.384; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/conf/elevate.xml
+INFO  - 2014-06-26 18:57:39.410; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2014-06-26 18:57:39.410; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2014-06-26 18:57:39.411; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@6a7ca333[space] main{StandardDirectoryReader(segments_kt:2284:nrt _he(4.4):C19/1:delGen=1 _gz(4.4):C1 _h0(4.4):C1 _hi(4.4):C1)}
+INFO  - 2014-06-26 18:57:39.411; org.apache.solr.core.CoreContainer; registering core: space
+INFO  - 2014-06-26 18:57:39.410; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2014-06-26 18:57:39.411; org.apache.solr.core.CoreContainer; registering core: default
+INFO  - 2014-06-26 18:57:39.411; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@47d6e0f5[default] main{StandardDirectoryReader(segments_1es:6047:nrt _1cm(4.4):C166/1:delGen=1 _1cr(4.4):C1 _1cs(4.4):C1 _1ct(4.4):C1 _1cv(4.4):C1 _1cw(4.4):C1)}
+INFO  - 2014-06-26 18:57:39.412; org.apache.solr.core.CoreContainer; registering core: spacestile
+INFO  - 2014-06-26 18:57:39.412; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@49426ffb[spacestile] main{StandardDirectoryReader(segments_kl:2277:nrt _gw(4.4):C305 _gx(4.4):C1 _gy(4.4):C1 _gz(4.4):C1 _h1(4.4):C1 _h3(4.4):C1 _h5(4.4):C1 _h7(4.4):C1 _h8(4.4):C1 _h9(4.4):C1 _hb(4.4):C1)}
+INFO  - 2014-06-26 18:57:39.415; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr
+INFO  - 2014-06-26 18:57:39.415; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-06-26 18:57:39.443; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8900
+INFO  - 2014-06-26 18:57:39.447; org.apache.solr.core.SolrCore; [spacestile] webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=34 
+INFO  - 2014-06-26 18:57:39.448; org.apache.solr.core.SolrCore; [space] webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=35 
+INFO  - 2014-06-26 18:57:39.448; org.apache.solr.core.SolrCore; [default] webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=35 
+INFO  - 2014-06-26 18:57:39.448; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 18:57:39.448; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2014-06-26 18:57:39.448; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2014-06-26 18:57:39.448; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 18:57:39.448; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 18:57:39.468; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2014-06-26 18:57:39.449; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2014-06-26 18:57:39.468; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2014-06-26 18:57:39.449; org.apache.solr.core.SolrCore; [default] Registered new searcher Searcher@47d6e0f5[default] main{StandardDirectoryReader(segments_1es:6047:nrt _1cm(4.4):C166/1:delGen=1 _1cr(4.4):C1 _1cs(4.4):C1 _1ct(4.4):C1 _1cv(4.4):C1 _1cw(4.4):C1)}
+INFO  - 2014-06-26 18:57:39.468; org.apache.solr.core.SolrCore; [space] Registered new searcher Searcher@6a7ca333[space] main{StandardDirectoryReader(segments_kt:2284:nrt _he(4.4):C19/1:delGen=1 _gz(4.4):C1 _h0(4.4):C1 _hi(4.4):C1)}
+INFO  - 2014-06-26 18:57:39.468; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2014-06-26 18:57:39.469; org.apache.solr.core.SolrCore; [spacestile] Registered new searcher Searcher@49426ffb[spacestile] main{StandardDirectoryReader(segments_kl:2277:nrt _gw(4.4):C305 _gx(4.4):C1 _gy(4.4):C1 _gz(4.4):C1 _h1(4.4):C1 _h3(4.4):C1 _h5(4.4):C1 _h7(4.4):C1 _h8(4.4):C1 _h9(4.4):C1 _hb(4.4):C1)}
+INFO  - 2014-06-26 18:57:42.503; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1403823462497} status=0 QTime=2 
+INFO  - 2014-06-26 18:57:42.700; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={wt=json&_=1403823462679} status=0 QTime=19 
+INFO  - 2014-06-26 18:57:42.715; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1403823462711} status=0 QTime=1 
+INFO  - 2014-06-26 18:57:42.715; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1403823462711} status=0 QTime=1 
+INFO  - 2014-06-26 18:57:42.726; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1403823462721} status=0 QTime=1 
+INFO  - 2014-06-26 18:57:42.729; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/replication params={wt=json&command=details&_=1403823462724} status=0 QTime=2 
+INFO  - 2014-06-26 18:57:42.730; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1403823462727} status=0 QTime=1 
+INFO  - 2014-06-26 18:57:42.732; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1403823462728} status=503 QTime=1 
+INFO  - 2014-06-26 18:57:42.739; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/admin/system params={wt=json&_=1403823462726} status=0 QTime=11 
+INFO  - 2014-06-26 18:59:51.723; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {add=[1~db3ea981-780e-444a-86c7-6a8d539df7f6!Space 1 (1472015726494613504)]} 0 45
+INFO  - 2014-06-26 18:59:51.730; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 18:59:51.756; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kt,generation=749}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_ku,generation=750}
+INFO  - 2014-06-26 18:59:51.757; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 750
+INFO  - 2014-06-26 18:59:51.758; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@558a858f[space] main
+INFO  - 2014-06-26 18:59:51.760; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@558a858f[space] main{StandardDirectoryReader(segments_ku:2286:nrt _he(4.4):C19/1:delGen=1 _gz(4.4):C1 _h0(4.4):C1 _hi(4.4):C1 _hj(4.8):C1)}
+INFO  - 2014-06-26 18:59:51.760; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 18:59:51.760; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 18:59:51.760; org.apache.solr.core.SolrCore; [space] Registered new searcher Searcher@558a858f[space] main{StandardDirectoryReader(segments_ku:2286:nrt _he(4.4):C19/1:delGen=1 _gz(4.4):C1 _h0(4.4):C1 _hi(4.4):C1 _hj(4.8):C1)}
+INFO  - 2014-06-26 18:59:51.761; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {commit=} 0 31
+INFO  - 2014-06-26 18:59:51.772; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {add=[1!SpacesTile 1 (1472015726559625216), 2!SpacesTile 2 (1472015726562770944), 3!SpacesTile 3 (1472015726563819520), 4!SpacesTile 4 (1472015726564868096), 5!SpacesTile 5 (1472015726565916672)]} 0 6
+INFO  - 2014-06-26 18:59:51.775; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 18:59:51.790; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kl,generation=741}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_km,generation=742}
+INFO  - 2014-06-26 18:59:51.790; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 742
+INFO  - 2014-06-26 18:59:51.792; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@175293c7[spacestile] main
+INFO  - 2014-06-26 18:59:51.793; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 18:59:51.793; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@175293c7[spacestile] main{StandardDirectoryReader(segments_km:2280:nrt _gw(4.4):C305 _gx(4.4):C1 _gy(4.4):C1 _gz(4.4):C1 _h1(4.4):C1 _h3(4.4):C1 _h5(4.4):C1 _h7(4.4):C1 _h8(4.4):C1 _h9(4.4):C1 _hb(4.4):C1 _hc(4.8):C5)}
+INFO  - 2014-06-26 18:59:51.794; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 18:59:51.794; org.apache.solr.core.SolrCore; [spacestile] Registered new searcher Searcher@175293c7[spacestile] main{StandardDirectoryReader(segments_km:2280:nrt _gw(4.4):C305 _gx(4.4):C1 _gy(4.4):C1 _gz(4.4):C1 _h1(4.4):C1 _h3(4.4):C1 _h5(4.4):C1 _h7(4.4):C1 _h8(4.4):C1 _h9(4.4):C1 _hb(4.4):C1 _hc(4.8):C5)}
+INFO  - 2014-06-26 18:59:51.794; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {commit=} 0 19
+INFO  - 2014-06-26 18:59:51.822; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/select params={q=space_id_is:1&q=organization_id_is:1&fl=id&fl=_version_&wt=ruby} hits=1 status=0 QTime=4 
+INFO  - 2014-06-26 18:59:51.851; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {add=[1~db3ea981-780e-444a-86c7-6a8d539df7f6!Space 1 (1472015726646657024)]} 0 22
+INFO  - 2014-06-26 18:59:51.856; org.apache.solr.core.SolrCore; [spacestile] webapp=/solr path=/select params={q=space_id_is:1&q=organization_id_is:1&fl=id&fl=_version_&wt=ruby} hits=5 status=0 QTime=2 
+INFO  - 2014-06-26 18:59:51.919; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {add=[1!SpacesTile 1 (1472015726712717312), 2!SpacesTile 2 (1472015726714814464), 3!SpacesTile 3 (1472015726715863040), 4!SpacesTile 4 (1472015726717960192), 5!SpacesTile 5 (1472015726720057344)]} 0 9
+INFO  - 2014-06-26 18:59:51.922; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 18:59:51.928; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_ku,generation=750}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kv,generation=751}
+INFO  - 2014-06-26 18:59:51.928; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 751
+INFO  - 2014-06-26 18:59:51.930; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5c873fd4[space] main
+INFO  - 2014-06-26 18:59:51.931; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@5c873fd4[space] main{StandardDirectoryReader(segments_kv:2290:nrt _he(4.4):C19/1:delGen=1 _gz(4.4):C1 _h0(4.4):C1 _hi(4.4):C1 _hk(4.8):C1)}
+INFO  - 2014-06-26 18:59:51.931; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 18:59:51.931; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 18:59:51.931; org.apache.solr.core.SolrCore; [space] Registered new searcher Searcher@5c873fd4[space] main{StandardDirectoryReader(segments_kv:2290:nrt _he(4.4):C19/1:delGen=1 _gz(4.4):C1 _h0(4.4):C1 _hi(4.4):C1 _hk(4.8):C1)}
+INFO  - 2014-06-26 18:59:51.933; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {commit=} 0 12
+INFO  - 2014-06-26 18:59:51.935; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 18:59:51.944; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_km,generation=742}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kn,generation=743}
+INFO  - 2014-06-26 18:59:51.944; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 743
+INFO  - 2014-06-26 18:59:51.946; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@771dbc7e[spacestile] main
+INFO  - 2014-06-26 18:59:51.946; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@771dbc7e[spacestile] main{StandardDirectoryReader(segments_kn:2285:nrt _gw(4.4):C305 _hd(4.8):C10 _he(4.8):C5)}
+INFO  - 2014-06-26 18:59:51.947; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 18:59:51.946; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 18:59:51.947; org.apache.solr.core.SolrCore; [spacestile] Registered new searcher Searcher@771dbc7e[spacestile] main{StandardDirectoryReader(segments_kn:2285:nrt _gw(4.4):C305 _hd(4.8):C10 _he(4.8):C5)}
+INFO  - 2014-06-26 18:59:51.953; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {commit=} 0 18
+INFO  - 2014-06-26 18:59:51.959; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/select params={q=space_id_is:1&q=organization_id_is:1&q=test_id_ss:55b0b834-5ab0-40f8-a637-b4e4deed02a3&fl=id&fl=users_ims&fl=groups_ims&fl=organization_id_is&fl=test_id_ss&wt=ruby} hits=1 status=0 QTime=1 
+INFO  - 2014-06-26 18:59:51.962; org.apache.solr.core.SolrCore; [spacestile] webapp=/solr path=/select params={q=space_id_is:1&q=organization_id_is:1&q=test_id_ss:55b0b834-5ab0-40f8-a637-b4e4deed02a3&fl=id&fl=users_ims&fl=groups_ims&fl=organization_id_is&fl=test_id_ss&wt=ruby} hits=5 status=0 QTime=1 
+INFO  - 2014-06-26 18:59:51.972; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@574a8ef[space] realtime
+INFO  - 2014-06-26 18:59:51.973; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=*:* (-1472015726769340416)} 0 7
+INFO  - 2014-06-26 18:59:51.975; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 18:59:51.977; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kv,generation=751}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kw,generation=752}
+INFO  - 2014-06-26 18:59:51.977; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 752
+INFO  - 2014-06-26 18:59:51.978; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4f697998[space] main
+INFO  - 2014-06-26 18:59:51.979; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@4f697998[space] main{StandardDirectoryReader(segments_kv:2292:nrt)}
+INFO  - 2014-06-26 18:59:51.979; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 18:59:51.979; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 18:59:51.979; org.apache.solr.core.SolrCore; [space] Registered new searcher Searcher@4f697998[space] main{StandardDirectoryReader(segments_kv:2292:nrt)}
+INFO  - 2014-06-26 18:59:51.982; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {commit=} 0 7
+INFO  - 2014-06-26 18:59:51.988; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7e9837f7[spacestile] realtime
+INFO  - 2014-06-26 18:59:51.988; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=*:* (-1472015726788214784)} 0 4
+INFO  - 2014-06-26 18:59:51.991; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 18:59:51.992; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kn,generation=743}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_ko,generation=744}
+INFO  - 2014-06-26 18:59:51.992; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 744
+INFO  - 2014-06-26 18:59:51.993; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@44d7cad7[spacestile] main
+INFO  - 2014-06-26 18:59:51.994; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@44d7cad7[spacestile] main{StandardDirectoryReader(segments_kn:2287:nrt)}
+INFO  - 2014-06-26 18:59:51.994; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 18:59:51.994; org.apache.solr.core.SolrCore; [spacestile] Registered new searcher Searcher@44d7cad7[spacestile] main{StandardDirectoryReader(segments_kn:2287:nrt)}
+INFO  - 2014-06-26 18:59:51.994; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 18:59:51.996; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {commit=} 0 5
+INFO  - 2014-06-26 18:59:57.636; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/logging params={wt=json&since=0&_=1403823597634} status=0 QTime=1 
+INFO  - 2014-06-26 19:00:07.658; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/logging params={wt=json&since=1403823459363&_=1403823607655} status=0 QTime=0 
+INFO  - 2014-06-26 19:00:17.665; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/logging params={wt=json&since=1403823459363&_=1403823617663} status=0 QTime=0 
+INFO  - 2014-06-26 19:00:27.672; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/logging params={wt=json&since=1403823459363&_=1403823627670} status=0 QTime=0 
+INFO  - 2014-06-26 19:00:37.679; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/logging params={wt=json&since=1403823459363&_=1403823637677} status=0 QTime=0 
+INFO  - 2014-06-26 19:00:47.686; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/logging params={wt=json&since=1403823459363&_=1403823647684} status=0 QTime=0 
+INFO  - 2014-06-26 19:00:57.693; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/logging params={wt=json&since=1403823459363&_=1403823657692} status=0 QTime=0 
+INFO  - 2014-06-26 19:00:59.627; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {add=[1~e02b73fa-8fe4-49cc-8172-630ba01c8043!Space 1 (1472015797714944000)]} 0 2
+INFO  - 2014-06-26 19:00:59.632; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 19:00:59.636; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kw,generation=752}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kx,generation=753}
+INFO  - 2014-06-26 19:00:59.636; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 753
+INFO  - 2014-06-26 19:00:59.637; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4ec05ece[space] main
+INFO  - 2014-06-26 19:00:59.638; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@4ec05ece[space] main{StandardDirectoryReader(segments_kx:2294:nrt _hl(4.8):C1)}
+INFO  - 2014-06-26 19:00:59.638; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 19:00:59.638; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 19:00:59.639; org.apache.solr.core.SolrCore; [space] Registered new searcher Searcher@4ec05ece[space] main{StandardDirectoryReader(segments_kx:2294:nrt _hl(4.8):C1)}
+INFO  - 2014-06-26 19:00:59.639; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {commit=} 0 8
+INFO  - 2014-06-26 19:00:59.647; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {add=[1!SpacesTile 1 (1472015797733818368), 2!SpacesTile 2 (1472015797735915520), 3!SpacesTile 3 (1472015797736964096), 4!SpacesTile 4 (1472015797738012672), 5!SpacesTile 5 (1472015797738012673)]} 0 4
+INFO  - 2014-06-26 19:00:59.650; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 19:00:59.655; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_ko,generation=744}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kp,generation=745}
+INFO  - 2014-06-26 19:00:59.656; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 745
+INFO  - 2014-06-26 19:00:59.657; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@3f90f865[spacestile] main
+INFO  - 2014-06-26 19:00:59.658; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@3f90f865[spacestile] main{StandardDirectoryReader(segments_kp:2289:nrt _hf(4.8):C5)}
+INFO  - 2014-06-26 19:00:59.658; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 19:00:59.658; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 19:00:59.658; org.apache.solr.core.SolrCore; [spacestile] Registered new searcher Searcher@3f90f865[spacestile] main{StandardDirectoryReader(segments_kp:2289:nrt _hf(4.8):C5)}
+INFO  - 2014-06-26 19:00:59.659; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {commit=} 0 9
+INFO  - 2014-06-26 19:00:59.675; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/select params={q=space_id_is:1&q=organization_id_is:1&fl=id&fl=_version_&wt=ruby} hits=1 status=0 QTime=1 
+INFO  - 2014-06-26 19:00:59.679; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {add=[1~e02b73fa-8fe4-49cc-8172-630ba01c8043!Space 1 (1472015797770518528)]} 0 2
+INFO  - 2014-06-26 19:00:59.682; org.apache.solr.core.SolrCore; [spacestile] webapp=/solr path=/select params={q=space_id_is:1&q=organization_id_is:1&fl=id&fl=_version_&wt=ruby} hits=5 status=0 QTime=1 
+INFO  - 2014-06-26 19:00:59.758; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {add=[1!SpacesTile 1 (1472015797847064576), 2!SpacesTile 2 (1472015797849161728), 3!SpacesTile 3 (1472015797851258880), 4!SpacesTile 4 (1472015797852307456), 5!SpacesTile 5 (1472015797853356032)]} 0 8
+INFO  - 2014-06-26 19:00:59.761; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 19:00:59.766; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kx,generation=753}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_ky,generation=754}
+INFO  - 2014-06-26 19:00:59.766; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 754
+INFO  - 2014-06-26 19:00:59.768; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@51ca54a7[space] main
+INFO  - 2014-06-26 19:00:59.769; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@51ca54a7[space] main{StandardDirectoryReader(segments_ky:2298:nrt _hm(4.8):C1)}
+INFO  - 2014-06-26 19:00:59.769; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 19:00:59.769; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 19:00:59.769; org.apache.solr.core.SolrCore; [space] Registered new searcher Searcher@51ca54a7[space] main{StandardDirectoryReader(segments_ky:2298:nrt _hm(4.8):C1)}
+INFO  - 2014-06-26 19:00:59.771; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {commit=} 0 11
+INFO  - 2014-06-26 19:00:59.773; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 19:00:59.777; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kp,generation=745}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index lockFactory=NativeFSLockFactory@/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_kq,generation=746}
+INFO  - 2014-06-26 19:00:59.778; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 746
+INFO  - 2014-06-26 19:00:59.779; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@62744ddd[spacestile] main
+INFO  - 2014-06-26 19:00:59.780; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@62744ddd[spacestile] main{StandardDirectoryReader(segments_kq:2293:nrt _hg(4.8):C5)}
+INFO  - 2014-06-26 19:00:59.780; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 19:00:59.780; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-26 19:00:59.781; org.apache.solr.core.SolrCore; [spacestile] Registered new searcher Searcher@62744ddd[spacestile] main{StandardDirectoryReader(segments_kq:2293:nrt _hg(4.8):C5)}
+INFO  - 2014-06-26 19:00:59.782; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {commit=} 0 9
+INFO  - 2014-06-26 19:00:59.788; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/select params={q=space_id_is:1&q=organization_id_is:1&q=test_id_ss:76de7632-bd21-4e5c-a459-9a0e4d16825e&fl=id&fl=users_ims&fl=groups_ims&fl=organization_id_is&fl=test_id_ss&wt=ruby} hits=1 status=0 QTime=0 
+INFO  - 2014-06-26 19:00:59.791; org.apache.solr.core.SolrCore; [spacestile] webapp=/solr path=/select params={q=space_id_is:1&q=organization_id_is:1&q=test_id_ss:76de7632-bd21-4e5c-a459-9a0e4d16825e&fl=id&fl=users_ims&fl=groups_ims&fl=organization_id_is&fl=test_id_ss&wt=ruby} hits=5 status=0 QTime=0 
+INFO  - 2014-06-26 19:00:59.794; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 19:00:59.794; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2014-06-26 19:00:59.794; org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2014-06-26 19:00:59.795; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 19:00:59.795; org.apache.solr.update.processor.LogUpdateProcessor; [space] webapp=/solr path=/update params={wt=ruby} {commit=} 0 1
+INFO  - 2014-06-26 19:00:59.797; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-26 19:00:59.797; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2014-06-26 19:00:59.797; org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2014-06-26 19:00:59.797; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-26 19:00:59.798; org.apache.solr.update.processor.LogUpdateProcessor; [spacestile] webapp=/solr path=/update params={wt=ruby} {commit=} 0 1
+INFO  - 2014-06-26 19:01:07.701; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/logging params={wt=json&since=1403823459363&_=1403823667699} status=0 QTime=1 
+INFO  - 2014-06-26 19:01:07.929; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1403823667924} status=0 QTime=1 
+INFO  - 2014-06-26 19:01:07.930; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/replication params={wt=json&command=details&_=1403823667927} status=0 QTime=0 
+INFO  - 2014-06-26 19:01:07.933; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1403823667931} status=0 QTime=0 
+INFO  - 2014-06-26 19:01:07.935; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1403823667932} status=503 QTime=0 
+INFO  - 2014-06-26 19:01:07.944; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/admin/system params={wt=json&_=1403823667929} status=0 QTime=12 
+INFO  - 2014-06-26 19:01:11.225; org.apache.solr.core.SolrCore; [space] webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1403823671222} hits=1 status=0 QTime=1 
+INFO  - 2014-06-26 19:02:27.738; org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:8900
+INFO  - 2014-06-26 19:02:27.739; org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr-webapp/webapp/},/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/webapps/solr.war
+INFO  - 2014-06-26 19:02:28.740; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1068586139
+INFO  - 2014-06-26 19:02:28.741; org.apache.solr.core.SolrCore; [default]  CLOSING SolrCore org.apache.solr.core.SolrCore@4c3cf1a5
+INFO  - 2014-06-26 19:02:28.741; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=3547,transaction_logs_total_number=10}
+INFO  - 2014-06-26 19:02:28.742; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2014-06-26 19:02:28.742; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2014-06-26 19:02:28.742; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2014-06-26 19:02:28.743; org.apache.solr.core.SolrCore; [default] Closing main searcher on request.
+INFO  - 2014-06-26 19:02:28.743; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2014-06-26 19:02:28.744; org.apache.solr.core.CachingDirectoryFactory; looking to close /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data/index [CachedDir<<refCount=0;path=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data/index;done=false>>]
+INFO  - 2014-06-26 19:02:28.744; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data/index
+INFO  - 2014-06-26 19:02:28.744; org.apache.solr.core.CachingDirectoryFactory; looking to close /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data [CachedDir<<refCount=0;path=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data;done=false>>]
+INFO  - 2014-06-26 19:02:28.744; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/default/data
+INFO  - 2014-06-26 19:02:28.744; org.apache.solr.core.SolrCore; [space]  CLOSING SolrCore org.apache.solr.core.SolrCore@45d92d3a
+INFO  - 2014-06-26 19:02:28.744; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=6,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=4,cumulative_deletesById=0,cumulative_deletesByQuery=1,cumulative_errors=0,transaction_logs_total_size=5375,transaction_logs_total_number=10}
+INFO  - 2014-06-26 19:02:28.745; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2014-06-26 19:02:28.745; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2014-06-26 19:02:28.745; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2014-06-26 19:02:28.746; org.apache.solr.core.SolrCore; [space] Closing main searcher on request.
+INFO  - 2014-06-26 19:02:28.747; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2014-06-26 19:02:28.747; org.apache.solr.core.CachingDirectoryFactory; looking to close /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data [CachedDir<<refCount=0;path=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data;done=false>>]
+INFO  - 2014-06-26 19:02:28.747; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data
+INFO  - 2014-06-26 19:02:28.747; org.apache.solr.core.CachingDirectoryFactory; looking to close /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index [CachedDir<<refCount=0;path=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index;done=false>>]
+INFO  - 2014-06-26 19:02:28.747; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/space/data/index
+INFO  - 2014-06-26 19:02:28.747; org.apache.solr.core.SolrCore; [spacestile]  CLOSING SolrCore org.apache.solr.core.SolrCore@7fe4e633
+INFO  - 2014-06-26 19:02:28.748; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=6,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=20,cumulative_deletesById=0,cumulative_deletesByQuery=1,cumulative_errors=0,transaction_logs_total_size=3736,transaction_logs_total_number=10}
+INFO  - 2014-06-26 19:02:28.748; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2014-06-26 19:02:28.748; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2014-06-26 19:02:28.748; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2014-06-26 19:02:28.749; org.apache.solr.core.SolrCore; [spacestile] Closing main searcher on request.
+INFO  - 2014-06-26 19:02:28.749; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2014-06-26 19:02:28.749; org.apache.solr.core.CachingDirectoryFactory; looking to close /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index [CachedDir<<refCount=0;path=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index;done=false>>]
+INFO  - 2014-06-26 19:02:28.749; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data/index
+INFO  - 2014-06-26 19:02:28.749; org.apache.solr.core.CachingDirectoryFactory; looking to close /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data [CachedDir<<refCount=0;path=/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data;done=false>>]
+INFO  - 2014-06-26 19:02:28.750; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr/spacestile/data
+INFO  - 2014-06-26 19:02:28.751; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/solr-webapp/webapp/},/Users/mityaWork/Dropbox/sunspot/sunspot_solr/solr/webapps/solr.war

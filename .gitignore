@@ -7,6 +7,9 @@ sunspot_rails/spec/rails3/vendor
 **/*/vendor/bundle
 sunspot-solr.pid
 sunspot_solr/solr/solr-webapp
+sunspot_solr/solr/solr/default/data
+sunspot_solr/solr/solr/space/data
+sunspot_solr/solr/solr/spacestile/data
 .yardoc
 docs
 *.swp
