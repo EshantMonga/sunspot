@@ -106,14 +106,26 @@ module Sunspot
     # 
     # Return the Field with the given (public-facing) name
     #
-    def field(field_name)
+    def field(field_input, is_retry=false)
+      field_name = case field_input
+                     when LazyField
+                       field_input.name
+                     else
+                       field_input
+                   end
+
       if field_factory = @field_factories_cache[field_name.to_sym]
         field_factory.build
       else
-        raise(
-          UnrecognizedFieldError,
-          "No field configured for #{@class_name} with name '#{field_name}'"
-        )
+        unless is_retry || !field_input.is_a?(LazyField)
+          add_field_factory(field_input.name, field_input.type, field_input.opts)
+          field(field_name, true)
+        else
+          raise(
+            UnrecognizedFieldError,
+            "No field configured for #{@class_name} with name '#{field_name}'"
+          )
+        end
       end
     end
 
@@ -122,15 +134,27 @@ module Sunspot
     # implementation will always return a single field (in an array), but
     # CompositeSetup objects might return more than one.
     #
-    def text_fields(field_name)
+    def text_fields(field_input, is_retry=false)
+      field_name = case field_input
+                     when LazyField
+                       field_input.name
+                     else
+                       field_input
+                   end
+
       text_field = 
         if field_factory = @text_field_factories_cache[field_name.to_sym]
           field_factory.build
         else
-          raise(
-            UnrecognizedFieldError,
-            "No text field configured for #{@class_name} with name '#{field_name}'"
-          )
+          unless is_retry || !field_input.is_a?(LazyField)
+            add_text_field_factory(field_input.name, field_input.opts)
+            field(field_name, true)
+          else
+            raise(
+              UnrecognizedFieldError,
+              "No text field configured for #{@class_name} with name '#{field_name}'"
+            )
+          end
         end
       [text_field]
     end

@@ -189,9 +189,10 @@ module Sunspot
 
       def add_restriction(negated, *args)
         case args.first
-        when String, Symbol
+        when String, Symbol, LazyField
           raise ArgumentError if args.length > 2
-          field = @setup.field(args[0].to_sym)
+          args[0] = args[0].to_sym if args[0].is_a? String
+          field = @setup.field(args[0])
           if args.length > 1
             value = args[1]
             @scope.add_shorthand_restriction(negated, field, value)

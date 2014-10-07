@@ -107,9 +107,10 @@ module Sunspot
 
       def with(*args)
         case args.first
-        when String, Symbol
+          when String, Symbol, LazyField
+          args[0] = args[0].to_sym if args[0].is_a? String
           if args.length == 1 # NONE
-            field = @setup.field(args[0].to_sym)
+            field = @setup.field(args[0])
             return DSL::RestrictionWithNear.new(field, @scope, @query, false)
           end
         end
