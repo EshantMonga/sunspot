@@ -148,7 +148,7 @@ module Sunspot
         else
           unless is_retry || !field_input.is_a?(LazyField)
             add_text_field_factory(field_input.name, field_input.opts)
-            field(field_name, true)
+            text_fields(field_name, true)
           else
             raise(
               UnrecognizedFieldError,
