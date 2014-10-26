@@ -83,10 +83,26 @@
         -->
     <fieldType name="text_path" class="solr.TextField" positionIncrementGap="100">
         <analyzer type="index">
-            <tokenizer class="solr.PathHierarchyTokenizerFactory" delimiter="/"/>
+            <tokenizer class="solr.PathHierarchyTokenizerFactory"
+                       delimiter="/"/>
+            <filter class="solr.ASCIIFoldingFilterFactory"/>
         </analyzer>
         <analyzer type="query">
             <tokenizer class="solr.KeywordTokenizerFactory" />
+            <filter class="solr.ASCIIFoldingFilterFactory"/>
+        </analyzer>
+    </fieldType>
+    <fieldType name="text_path_lower" class="solr.TextField" positionIncrementGap="100">
+        <analyzer type="index">
+            <tokenizer class="solr.PathHierarchyTokenizerFactory"
+                       delimiter="/"/>
+            <filter class="solr.LowerCaseFilterFactory"/>
+            <filter class="solr.ASCIIFoldingFilterFactory"/>
+        </analyzer>
+        <analyzer type="query">
+            <tokenizer class="solr.KeywordTokenizerFactory" />
+            <filter class="solr.LowerCaseFilterFactory"/>
+            <filter class="solr.ASCIIFoldingFilterFactory"/>
         </analyzer>
     </fieldType>
     <fieldType name="text" class="solr.TextField" positionIncrementGap="100" autoGeneratePhraseQueries="true">
@@ -230,6 +246,10 @@
     <dynamicField name="*_textpas" stored="true" type="text_path" multiValued="false" indexed="true"/>
     <!-- *** This dynamicField is used by Sunspot! *** -->
     <dynamicField name="*_textpams" stored="true" type="text_path" multiValued="true" indexed="true"/>
+    <!-- *** This dynamicField is used by Sunspot! *** -->
+    <dynamicField name="*_textpals" stored="true" type="text_path_lower" multiValued="false" indexed="true"/>
+    <!-- *** This dynamicField is used by Sunspot! *** -->
+    <dynamicField name="*_textpalms" stored="true" type="text_path_lower" multiValued="true" indexed="true"/>    
     <!-- *** This dynamicField is used by Sunspot! *** -->
     <dynamicField name="*_rawtextp" stored="true" type="raw_text_pre" multiValued="false" indexed="true"/>
     <!-- *** This dynamicField is used by Sunspot! *** -->
