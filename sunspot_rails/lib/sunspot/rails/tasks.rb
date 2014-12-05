@@ -5,7 +5,7 @@ namespace :sunspot do
   # conventions, in that the file name matches the defined class name. \
   # By default the indexing system works in batches of 50 records, you can \
   # set your own value for this by using the batch_size argument. You can \
-  # also optionally define a list of models to separated by a forward slash '/'
+  # also optionally define a list of models separated by a plus sign '+'
   #
   # $ rake sunspot:reindex                # reindex all models
   # $ rake sunspot:reindex[1000]          # reindex in batches of 1000
@@ -31,6 +31,7 @@ namespace :sunspot do
       # Load all the application's models. Models which invoke 'searchable' will register themselves
       # in Sunspot.searchable.
       Rails.application.eager_load!
+      Rails::Engine.subclasses.each{|engine| engine.instance.eager_load!}
 
       if args[:models].present?
         # Choose a specific subset of models, if requested
@@ -72,7 +73,7 @@ namespace :sunspot do
 
   def sunspot_solr_in_load_path?
     # http://www.rubular.com/r/rJGDh7eOSc
-    $:.any? { |path| path =~ %r{sunspot_solr(-[^/]+)?/lib$} }
+    $:.any? { |path| path.to_s =~ %r{sunspot_solr(-[^/]+)?/lib$} }
   end
 
   unless sunspot_solr_in_load_path?
