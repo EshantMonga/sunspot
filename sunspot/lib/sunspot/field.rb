@@ -196,6 +196,7 @@ module Sunspot
       @clazz = options.delete(:clazz)
       @target = options.delete(:target)
       @default_boost = options.delete(:default_boost)
+      @from_index = options.delete(:from_index)
       @joined = true
 
       check_options(options)
@@ -210,7 +211,8 @@ module Sunspot
     end
 
     def local_params
-      "{!join from=#{from} to=#{to}}"
+      from_index_query = @from_index.present ? " fromIndex=#{@from_index}" : ''
+      "{!join from=#{from} to=#{to}#{from_index_query}}"
     end
 
     def eql?(field)
