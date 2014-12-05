@@ -211,7 +211,7 @@ module Sunspot
     end
 
     def local_params
-      from_index_query = @from_index.present ? " fromIndex=#{@from_index}" : ''
+      from_index_query = @from_index.present? ? " fromIndex=#{@from_index}" : ''
       "{!join from=#{from} to=#{to}#{from_index_query}}"
     end
 
