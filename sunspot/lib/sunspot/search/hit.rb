@@ -83,6 +83,10 @@ module Sunspot
         @stored_cache[field_key] = stored_value(field_name, dynamic_field_name)
       end
 
+      def raw_stored(field_name)
+          @stored_values[field_name]
+      end
+
       # 
       # Retrieve the instance associated with this hit. This is lazy-loaded, but
       # the first time it is called on any hit, all the hits for the search will
