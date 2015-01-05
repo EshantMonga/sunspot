@@ -23,6 +23,7 @@ module Sunspot
       #
       attr_reader :score
       #
+      attr_reader :stored_values
 
       attr_writer :result #:nodoc:
 
