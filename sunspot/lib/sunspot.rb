@@ -341,7 +341,7 @@ module Sunspot
     # and Sunspot::DSL::StandardQuery for the full API presented inside the
     # block.
     #
-    def search(type, organization_id, use_primary_cluster=nil, &block)
+    def search(type, organization_id, use_primary_cluster=true, &block)
       session.search(type, organization_id, use_primary_cluster, &block)
     end
 
