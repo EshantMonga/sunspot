@@ -5,6 +5,7 @@ module Sunspot
         @scope = Scope.new
         @sort = SortComposite.new
         @components = [@scope, @sort]
+        types = [] if types.length == 1 && [Space, SpacesTile].include?(types.first)
         if types.length == 1
           @scope.add_positive_restriction(TypeField.instance, Restriction::EqualTo, types.first)
         else
