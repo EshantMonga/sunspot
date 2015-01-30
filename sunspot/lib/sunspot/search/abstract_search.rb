@@ -18,6 +18,7 @@ module Sunspot
       #
       attr_reader :facets, :groups, :stats
       attr_reader :query #:nodoc:
+      attr_reader :solr_result
       attr_accessor :request_handler
 
       include HitEnumerable
