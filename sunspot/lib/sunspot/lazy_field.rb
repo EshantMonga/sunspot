@@ -18,6 +18,8 @@ module Sunspot
           Type::DateType.instance
         when :time
           Type::TimeType.instance
+        when :trietime
+          Type::TrieTimeType.instance
         when :boolean
           Type::BooleanType.instance
         when :text
