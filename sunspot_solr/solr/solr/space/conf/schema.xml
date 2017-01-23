@@ -129,6 +129,17 @@
         <filter class="solr.PorterStemFilterFactory"/>
       </analyzer>
     </fieldType>
+    <fieldType name="text_cjk" class="solr.TextField" positionIncrementGap="10000" autoGeneratePhraseQueries="false">
+      <analyzer>
+        <tokenizer class="solr.ICUTokenizerFactory"/>
+        <filter class="solr.CJKWidthFilterFactory"/>
+        <!--filter class="edu.stanford.lucene.analysis.CJKFoldingFilterFactory"/-->
+        <filter class="solr.ICUTransformFilterFactory" id="Traditional-Simplified"/>
+        <filter class="solr.ICUTransformFilterFactory" id="Katakana-Hiragana"/>
+        <filter class="solr.ICUFoldingFilterFactory"/>
+        <filter class="solr.CJKBigramFilterFactory" han="true" hiragana="true" katakana="true" hangul="true" outputUnigrams="true"/>
+      </analyzer>
+    </fieldType>
     <fieldtype name="text_pre" class="solr.TextField" positionIncrementGap="100">
       <analyzer type="index">
         <tokenizer class="solr.WhitespaceTokenizerFactory"/>
@@ -213,6 +224,10 @@
     <field name="lat" stored="true" type="tdouble" multiValued="false" indexed="true"/>
     <!-- *** This field is used by Sunspot! *** -->
     <field name="lng" stored="true" type="tdouble" multiValued="false" indexed="true"/>
+
+    <field name="language" stored="true" type="string" multiValued="false" indexed="true"/>
+    <field name="languages" stored="true" type="string" multiValued="true" indexed="true"/>
+
     <!-- *** This dynamicField is used by Sunspot! *** -->
     <dynamicField name="random_*" stored="false" type="rand" multiValued="false" indexed="true"/>
     <!-- *** This dynamicField is used by Sunspot! *** -->
@@ -221,6 +236,8 @@
     <dynamicField name="*_text" stored="false" type="text" multiValued="true" indexed="true"/>
     <!-- *** This dynamicField is used by Sunspot! *** -->
     <dynamicField name="*_texts" stored="true" type="text" multiValued="true" indexed="true"/>
+    <dynamicField name="*_texts_english" stored="true" type="text" multiValued="true" indexed="true"/>
+    <dynamicField name="*_texts_cjk" stored="true" type="text_cjk" multiValued="true" indexed="true"/>
     <!-- *** This dynamicField is used by Sunspot! *** -->
     <dynamicField name="*_textp" stored="false" type="text_pre" multiValued="true" indexed="true"/>
     <!-- *** This dynamicField is used by Sunspot! *** -->

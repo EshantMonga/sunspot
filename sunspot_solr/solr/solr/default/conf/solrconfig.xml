@@ -1007,11 +1007,9 @@
          updateRequestProcessorChains that can be used by name 
          on each Update Request
       -->
-    <!--
        <lst name="defaults">
-         <str name="update.chain">dedupe</str>
+         <str name="update.chain">langid</str>
        </lst>
-       -->
   </requestHandler>
 
   <!-- for back compat with clients using /update/json and /update/csv -->  
@@ -1684,17 +1682,19 @@
        rich documents injected via ExtractingRequestHandler.
        See more about langId at http://wiki.apache.org/solr/LanguageDetection
     -->
-    <!--
-     <updateRequestProcessorChain name="langid">
-       <processor class="org.apache.solr.update.processor.TikaLanguageIdentifierUpdateProcessorFactory">
-         <str name="langid.fl">text,title,subject,description</str>
-         <str name="langid.langField">language_s</str>
-         <str name="langid.fallback">en</str>
-       </processor>
-       <processor class="solr.LogUpdateProcessorFactory" />
-       <processor class="solr.RunUpdateProcessorFactory" />
-     </updateRequestProcessorChain>
-    -->
+  <updateRequestProcessorChain name="langid">
+    <processor class="org.apache.solr.update.processor.LangDetectLanguageIdentifierUpdateProcessorFactory">
+      <str name="langid.fl">content_texts,additional_texts</str>
+      <str name="langid.langField">language</str>
+      <str name="langid.langsField">languages</str>
+      <str name="langid.map">true</str>
+      <str name="langid.whitelist">en,zh-cn</str>
+      <str name="langid.map.lcmap">en:english zh-cn:cjk</str>
+      <str name="langid.fallback">en</str>
+    </processor>
+    <processor class="solr.LogUpdateProcessorFactory" />
+    <processor class="solr.RunUpdateProcessorFactory" />
+  </updateRequestProcessorChain>
 
   <!-- Script update processor
 
