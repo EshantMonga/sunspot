@@ -22,7 +22,7 @@ module Sunspot
       def to_params
         params = {
           :group            => "true",
-          :"group.ngroups"  => "true",
+          :"group.ngroups"  => "false",
           :"group.field"    => @field.indexed_name
         }
 
