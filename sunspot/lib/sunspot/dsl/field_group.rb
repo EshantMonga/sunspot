@@ -13,6 +13,10 @@ module Sunspot
         @group.limit = num
       end
 
+      def ngroups(truefalse)
+        @group.ngroups = truefalse
+      end
+
       #
       # If set, facet counts are based on the most relevant document of
       # each group matching the query.
