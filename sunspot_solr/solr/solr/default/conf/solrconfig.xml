@@ -1688,8 +1688,8 @@
       <str name="langid.langField">language</str>
       <str name="langid.langsField">languages</str>
       <str name="langid.map">true</str>
-      <str name="langid.whitelist">en,zh-cn</str>
-      <str name="langid.map.lcmap">en:english zh-cn:cjk</str>
+      <str name="langid.whitelist">en,zh-cn,zh-tw</str>
+      <str name="langid.map.lcmap">en:english zh-cn:cjk zh-tw:cjk</str>
       <str name="langid.fallback">en</str>
     </processor>
     <processor class="solr.LogUpdateProcessorFactory" />
